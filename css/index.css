@@ -1,3 +1,7 @@
-.site {
-    
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+.fontweight500{
+    font-weight: 500;
 }
