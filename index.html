@@ -33,33 +33,48 @@
 	</head>
 	<body class="site" data-bs-theme="dark">
 		<header>
-			<nav class="navbar navbar-expand-lg bg-body-tertiary">
-				<a href="/" class="navbar-brand name">
-					<img
-						src="https://i.imgur.com/uD2FJn1.jpeg"
-						alt="pfp"
-						width="32"
-						height="32"
-						class="rounded-circle pfp"
-					/>
-					PinguSurMars</a
-				>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 				<div class="container-fluid">
-					<div class="collapse navbar-collapse" id="navbarNavDropdown">
-						<ul class="navbar-nav">
+					<a href="/" class="navbar-brand name">
+						<img
+							src="https://i.imgur.com/uD2FJn1.jpeg"
+							alt="pfp"
+							width="32"
+							height="32"
+							class="rounded-circle pfp"
+						/>
+						PinguSurMars</a
+					>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
 								<a class="nav-link active" aria-current="page" href="#">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" aria-current="page" href="/projects/"
-									>Projects</a
-								>
+								<a class="nav-link" href="/projects/">Projects</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" aria-current="page" href="/about/"
-									>About Me</a
-								>
+								<a class="nav-link" href="/about/">About Me</a>
 							</li>
+							<li class="nav-item"><button type="button" class="btn btn-warning btn-sm">
+								<a
+									href="https://www.paypal.com/donate/?hosted_button_id=AG68N6UDYUP9G"
+									class="nav-link text-black"
+									aria-current="page"
+									>Donate</a
+								>
+							</button></li>
 						</ul>
 					</div>
 				</div>
@@ -84,21 +99,18 @@
 			>
 				<div class="progress-bar" style="width: 2%"></div>
 			</div>
-			<ul class="list-group" style="margin-top: 10px; padding-top: 10px;">
-				<li class="list-group-item active">
-					TODO List: 
-				</li>
-				<li class="list-group-item">
-					Projects page
-				</li>
-				<li class="list-group-item">
-					About me
-				</li>
-				<li class="list-group-item">
+			<ul class="list-group" style="margin-top: 10px; padding-top: 10px">
+				<li class="list-group-item active">TODO List:</li>
+				<li class="list-group-item bg-warning text-black">Projects page</li>
+				<li class="list-group-item bg-warning text-black">About me</li>
+				<li class="list-group-item bg-danger text-black">
 					Get pingusurmars.net
 				</li>
 				<li class="list-group-item">
 					Get a decent webserver instead of a microsoft devtunnel
+				</li>
+				<li class="list-group-item bg-warning text-black">
+					Make a donation button
 				</li>
 			</ul>
 		</div>
