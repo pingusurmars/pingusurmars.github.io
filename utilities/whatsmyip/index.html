@@ -124,7 +124,9 @@
 			<h4>Your ISP is :</h4>
 			<p class="h4 fw-bold" id="isp"></p>
 			<h4>You are in:</h4>
-			<p class="h4 fw-bold" id="countrycity"></p>
+			<p class="h4 fw-bold" id="countrycity">
+				<img src="" alt="flag" id="flag" />
+			</p>
 			<h4>Your timezone is:</h4>
 			<p class="h4 fw-bold" id="tz"></p>
 		</div>
@@ -138,7 +140,11 @@
 						document.getElementById("isp").textContent =
 							jsonData.org;
 						document.getElementById("countrycity").textContent =
-							jsonData.city + ", " + jsonData.country_name + twemoji.parse
+							jsonData.city + ", " + jsonData.country_name;
+
+						const country_code = String(
+							jsonData.country_code
+						).toLowerCase;
 						document.getElementById("tz").textContent =
 							jsonData.timezone;
 					});
@@ -154,10 +160,6 @@
 		<script
 			type="application/javascript"
 			src="https://api.ipify.org?format=jsonp&callback=getIP"
-		></script>
-		<script
-			src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js"
-			crossorigin="anonymous"
 		></script>
 	</body>
 </html>
