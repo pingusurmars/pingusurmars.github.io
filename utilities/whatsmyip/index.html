@@ -17,6 +17,14 @@
 		<link rel="stylesheet" href="/css/index.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>PinguSurMars's Website</title>
+		<style>
+			.warntextline1 {
+				padding-top: 10px;
+			}
+			.marginbtm {
+                padding-top: 10px
+			}
+		</style>
 	</head>
 	<body class="site" data-bs-theme="dark">
 		<header>
@@ -111,11 +119,18 @@
 			<h4>Your ISP is :</h4>
 			<p class="h4 fw-bold" id="isp"></p>
 			<h4>You are in:</h4>
-			<p class="h4 fw-bold" id="countrycity">
-				<img src="" alt="flag" id="flag" />
-			</p>
+			<p class="h4 fw-bold" id="countrycity"></p>
 			<h4>Your timezone is:</h4>
 			<p class="h4 fw-bold" id="tz"></p>
+		</div>
+		<div class="container bg-warning text-black text-center rounded-3 davethemagicalcontainer">
+			<h4 class="warntextline1">INFO:</h4>
+			<h5 clas="warntextline2">
+				The "You are in:" location is not always accurate as it uses
+				your IP's location. <br />
+				This info might not always be reliable and/or accurate.
+			</h5>
+            <p class="marginbtm"></p>
 		</div>
 		<script type="application/javascript">
 			function getIP(json) {
