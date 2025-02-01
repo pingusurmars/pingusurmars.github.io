@@ -17,6 +17,40 @@
 		<link rel="stylesheet" href="/css/index.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>PinguSurMars's Website</title>
+        <style>
+            .btn-discord {
+                --bs-btn-color: #fff;
+                --bs-btn-bg: #5865F2;
+                --bs-btn-border-color: #5865F2;
+                --bs-btn-hover-color: #fff;
+                --bs-btn-hover-bg: #4251f1;
+                --bs-btn-hover-border-color: #4251f1;
+                --bs-btn-focus-shadow-rgb: 60, 153, 110;
+                --bs-btn-active-color: #fff;
+                --bs-btn-active-bg: #5865F2;
+                --bs-btn-active-border-color: #5865F2;
+                --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+                --bs-btn-disabled-color: #fff;
+                --bs-btn-disabled-bg: #198754;
+                --bs-btn-disabled-border-color: #198754;
+            }
+            .btn-github {
+                --bs-btn-color: #fff;
+                --bs-btn-bg: #333333;
+                --bs-btn-border-color: #333333;
+                --bs-btn-hover-color: #fff;
+                --bs-btn-hover-bg: #2b2a2a;
+                --bs-btn-hover-border-color: #2b2a2a;
+                --bs-btn-focus-shadow-rgb: 60, 153, 110;
+                --bs-btn-active-color: #fff;
+                --bs-btn-active-bg: #333333;
+                --bs-btn-active-border-color: #333333;
+                --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+                --bs-btn-disabled-color: #fff;
+                --bs-btn-disabled-bg: #198754;
+                --bs-btn-disabled-border-color: #198754;
+            }
+        </style>
 	</head>
 	<body class="site" data-bs-theme="dark">
 		<header>
@@ -109,38 +143,22 @@
 				<br />
 				Right now my website is pretty simple but i'll post some of my
 				projects here<br />
-				Thanks for passing by!
+				Thanks for passing by!<br/>
 			</h3>
-			<p>Progress for this Website</p>
-			<div
-				class="progress"
-				role="progressbar"
-				aria-valuenow="0"
-				aria-valuemin="0"
-				aria-valuemax="100"
-				title="progress-bar"
-			>
-				<div class="progress-bar" style="width: 7%"></div>
-			</div>
-			<ul class="list-group" style="margin-top: 10px; padding-top: 10px">
-				<li class="list-group-item active">TODO List:</li>
-				<li class="list-group-item bg-warning text-black">
-					Projects page
-				</li>
-				<li class="list-group-item bg-success text-black">About me</li>
-				<li class="list-group-item bg-danger text-black">
-					Get pingusurmars.net
-				</li>
-				<li class="list-group-item bg-warning text-black">
-					Utilities?
-				</li>
-			</ul>
-		</div>
-        <script
+            <p class="montserrat">(oh, by the way: this website has no google analytics, no ads and nothing since <br> i don't give a shit about all of that, plus ads are annoying as fuck)</p>
+        <div class="container montserrat text-center justify-content-center">
+            <button type="button" class="btn btn-discord" data-bs-toggle="popover" id="discordbtn" data-bs-content="I don't plan on making a server anytime soon, add me instead: pingusurmars">Discord</button>
+            <a href="https://github.com/pingusurmars" target="_blank"><button class="btn btn-github">GitHub</button></a>
+        </div>
+            <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"
     ></script>
+        <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
 	</body>
 </html>
 
