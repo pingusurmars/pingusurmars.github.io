@@ -114,8 +114,10 @@
 			What's my IP?
 		</h1>
 		<div class="container text-center montserrat">
-			<h4>Your IP is :</h4>
-			<p class="h4 fw-bold" id="ip"></p>
+			<h4>Your IP(v4) is :</h4>
+			<p class="h4 fw-bold" id="ipv4"></p>
+			<h4>Your IP(v6) is :</h4>
+			<p class="h4 fw-bold" id="ipv6"></p>			
 			<h4>Your ISP is :</h4>
 			<p class="h4 fw-bold" id="isp"></p>
 			<h4>You are in:</h4>
@@ -137,8 +139,11 @@
 			<p class="marginbtm"></p>
 		</div>
 		<script type="application/javascript">
-			function getIP(json) {
-				document.getElementById("ip").textContent = json.ip;
+			function getIPv4(json) {
+				document.getElementById("ipv4").textContent = json.ip;
+			}
+			function getIPv6(json) {
+				document.getElementById("ipv6").textContent = json.ip;
 			}
 			fetch("https://ipapi.co/json/")
 				.then(function (response) {
@@ -165,8 +170,12 @@
 		></script>
 		<script
 			type="application/javascript"
-			src="https://api.ipify.org?format=jsonp&callback=getIP"
+			src="https://api.ipify.org?format=jsonp&callback=getIPv4"
 		></script>
+		<script
+		type="application/javascript"
+		src="https://api6.ipify.org?format=jsonp&callback=getIPv6"
+	></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
