@@ -1,5 +1,4 @@
 # My Epic Website (v2)
-
-uhh what should i put here
-well this is made w/ html, css & bootstrap 5.3
-contributions accepted (i watch pull requests)
+uhh hi?
+made w/ html, css & bootstrap 5.3 and a tiny little bit of JS
+don't hesitate to contribute (i watch pull requests)
