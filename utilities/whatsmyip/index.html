@@ -102,7 +102,7 @@
 		function getIPv6(json) {
 			document.getElementById("ipv6").textContent = json.ip;
 		}
-		fetch("https://ipapi.co/json/")
+		fetch("https://ipapi.co/json/" + getIPv4())
 			.then(function (response) {
 				response.json().then((jsonData) => {
 					document.getElementById("isp").textContent =
