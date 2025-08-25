@@ -42,7 +42,7 @@
 							<a class="nav-link" href="/about/">About Me</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
 								aria-expanded="false">
 								Utilities
 							</a>
@@ -64,48 +64,36 @@
 			</div>
 		</nav>
 		</header>
-
-		<div class="container text-center">
-			<h1 class="display 1">About Me: <br /></h1>
-			<img
-				src="/img/profilepic.jpg"
-				alt="my profile pic"
-				width="128"
-				height="128"
-			/>
-			<p class="h4">
-				<br />
-				I'm PinguSurMars, often shortened to Pingu. <br />
-				I like tech, video games and ofc penguins <br />
-				<br />
-			</p>
-			<p class="h4">
-				PC Specs (June 23rd 2025): <br />
-				Laptop : HP Victus 16-S0040NF <br />
-				CPU : AMD Ryzen 7 (pro?) 7840HS (turbo @ 5.1GHz) <br />
-				GPU : Nvidia GeForce RTX 4070 (Laptop) <br />
-				RAM : 16GB DDR5 @ 5600 MT/s (help)<br />
-				WiFi : MediaTek MT7921 802.11ax (WiFi 6 <strong>NOT E</strong>)
-				<br />
-				SSD : Samsung OEM 500GB (with ~43.4 GB of free space) <br />
-				Ethernet NIC: Realtek USB-C 2.5GbE Adapter (<a
-					href="https://www.amazon.fr/dp/B0CD1FDKT1"
-					target="_blank"
-					>this one specifically (not sponsored)</a
-				>)
-			</p>
-			<p class="h5">
-				<br />You can contact me here: <br />
-				Discord: pingusurmars<br />Email :
-				<a href="mailto:contact.pingusurmars@gmail.com"
-					>contact.pingusurmars@gmail.com</a
+		<h1 class="display-1 text-center justify-content-center">Donate</h1>
+		<div class="container text-center montserrat">
+			<h3 class="montserrat">First of all, thank you for wanting to!</h3>
+			<h3 class="montserrat">
+				Second, I've removed the PayPal donate link I used to have
+				because I don't want to send them my ID
+			</h3>
+			<h3 class="montserrat">
+				<a
+					type="link"
+					data-bs-toggle="popover"
+					id="reasons"
+					class="ul text-white"
+					data-bs-content="87gGH6uWreSieQLavshra27Aqz2vwPwC5GAox73oCDhuDH29ThZSzfTa8brq3qNFcKiJS941KPk5CSCJJr3ELy5QP99on5k"
+					></br>If you still want to support me, you can use Monero (XMR)</a
 				>
-			</p>
+			</h3>
 		</div>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"
 		></script>
+		<script>
+			const popoverTriggerList = document.querySelectorAll(
+				'[data-bs-toggle="popover"]'
+			);
+			const popoverList = [...popoverTriggerList].map(
+				(popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+			);
+		</script>
 	</body>
 </html>

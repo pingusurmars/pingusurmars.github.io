@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/css/index.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PinguSurMars's Website</title>
+		<style>
+			.btn-discord {
+				--bs-btn-color: #fff;
+				--bs-btn-bg: #5865f2;
+				--bs-btn-border-color: #5865f2;
+				--bs-btn-hover-color: #fff;
+				--bs-btn-hover-bg: #4251f1;
+				--bs-btn-hover-border-color: #4251f1;
+				--bs-btn-focus-shadow-rgb: 60, 153, 110;
+				--bs-btn-active-color: #fff;
+				--bs-btn-active-bg: #5865f2;
+				--bs-btn-active-border-color: #5865f2;
+				--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+				--bs-btn-disabled-color: #fff;
+				--bs-btn-disabled-bg: #198754;
+				--bs-btn-disabled-border-color: #198754;
+			}
 
-<head>
-	<meta charset="UTF-8" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet" />
-	<link rel="stylesheet" href="/css/index.css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>PinguSurMars's Website</title>
-	<style>
-		.btn-discord {
-			--bs-btn-color: #fff;
-			--bs-btn-bg: #5865F2;
-			--bs-btn-border-color: #5865F2;
-			--bs-btn-hover-color: #fff;
-			--bs-btn-hover-bg: #4251f1;
-			--bs-btn-hover-border-color: #4251f1;
-			--bs-btn-focus-shadow-rgb: 60, 153, 110;
-			--bs-btn-active-color: #fff;
-			--bs-btn-active-bg: #5865F2;
-			--bs-btn-active-border-color: #5865F2;
-			--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-			--bs-btn-disabled-color: #fff;
-			--bs-btn-disabled-bg: #198754;
-			--bs-btn-disabled-border-color: #198754;
-		}
+			.btn-github {
+				--bs-btn-color: #fff;
+				--bs-btn-bg: #333333;
+				--bs-btn-border-color: #333333;
+				--bs-btn-hover-color: #fff;
+				--bs-btn-hover-bg: #2b2a2a;
+				--bs-btn-hover-border-color: #2b2a2a;
+				--bs-btn-focus-shadow-rgb: 60, 153, 110;
+				--bs-btn-active-color: #fff;
+				--bs-btn-active-bg: #333333;
+				--bs-btn-active-border-color: #333333;
+				--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+				--bs-btn-disabled-color: #fff;
+				--bs-btn-disabled-bg: #198754;
+				--bs-btn-disabled-border-color: #198754;
+			}
+		</style>
+	</head>
 
-		.btn-github {
-			--bs-btn-color: #fff;
-			--bs-btn-bg: #333333;
-			--bs-btn-border-color: #333333;
-			--bs-btn-hover-color: #fff;
-			--bs-btn-hover-bg: #2b2a2a;
-			--bs-btn-hover-border-color: #2b2a2a;
-			--bs-btn-focus-shadow-rgb: 60, 153, 110;
-			--bs-btn-active-color: #fff;
-			--bs-btn-active-bg: #333333;
-			--bs-btn-active-border-color: #333333;
-			--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-			--bs-btn-disabled-color: #fff;
-			--bs-btn-disabled-bg: #198754;
-			--bs-btn-disabled-border-color: #198754;
-		}
-	</style>
-</head>
-
-<body class="site" data-bs-theme="dark">
-	<header>
+	<body class="site" data-bs-theme="dark">
+		<header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container-fluid">
 				<a href="/" class="navbar-brand name">
@@ -63,7 +68,7 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
+							<a class="nav-link active" aria-current="page" href="/">Home</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="/projects/">Projects</a>
@@ -72,7 +77,7 @@
 							<a class="nav-link" href="/about/">About Me</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							<a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
 								aria-expanded="false">
 								Utilities
 							</a>
@@ -86,45 +91,53 @@
 
 							</ul>
 						</li>
-						<li class="nav-item">
-							<a href="https://www.paypal.com/donate/?hosted_button_id=AG68N6UDYUP9G" class="nav-link"
-								aria-current="page">Donate</a>
-						</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/donate/">Donate</a>
+							</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
-	</header>
-	<h1 class="display-1 text-center justify-content-center">Hi!</h1>
-	<div class="container text-center montserrat">
-		<h3 class="montserrat">
-			I'm PinguSurMars (pingu for short) and welcome to my website!
-			<br />
-			Right now my website is pretty simple but i'll post some of my
-			projects here<br />
-			Thanks for passing by!<br />
-		</h3>
-<p class="minitext">(also thanks <a href="https://thetechboy.net">TTB</a> for the subdomain, I never really thanked him for it 😭🙏)</p>
-		<p class="montserrat">(oh, by the way: this website has no analytics, no ads and nothing shitty like
-			that.<br>
-			<a type="link" data-bs-toggle="popover" id="reasons" class="ul text-white fw-bold"
-				data-bs-content="First up, putting google analytics on a dumb bio site is extremely useless to me since nobody even goes on it anyway. Secondly, the 2 cents of ad revenue per year isn't gonna make me a millionaire so why annoy people with ads. And lastly, most people these days have ad blockers so the ads wouldn't even show up anwyays">here's a
-				list of reasons why I don't</a>
-		</p>
-		<div class="container montserrat text-center justify-content-center">
-			<h5>My socials:</h5>
-			<p class="minitext">(some of them, not gonna give them all)</p>
-			<button type="button" class="btn btn-discord" data-bs-toggle="popover" id="discordbtn"
-				data-bs-content="I don't plan on making a server anytime soon, add me instead: pingusurmars">Discord</button>
-			<a href="https://github.com/pingusurmars" target="_blank"><button class="btn btn-github">GitHub</button></a>
+		</header>
+		<h1 class="display-1 text-center justify-content-center">Hi!</h1>
+		<div class="container text-center montserrat">
+			<h3 class="montserrat">
+				I'm PinguSurMars (pingu for short) and welcome to my website!
+				<br />
+				Right now my website is pretty simple but i'll post some of my
+				projects here<br />
+				Thanks for passing by!<br />
+			</h3>
+			<p class="minitext">
+				(also thanks <a href="https://thetechboy.net">TTB</a> for the
+				subdomain, I never really thanked him for it 😭🙏)
+			</p>
+			<p class="montserrat">
+				(oh, by the way: this website has no analytics, no ads and
+				nothing shitty like) that.<br />
+				<a
+					type="link"
+					data-bs-toggle="popover"
+					id="reasons"
+					class="ul text-white fw-bold"
+					data-bs-content="First up, putting google analytics on a dumb bio site is extremely useless to me since nobody even goes on it anyway. Secondly, the 2 cents of ad revenue per year isn't gonna make me a millionaire so why annoy people with ads. And lastly, most people these days have ad blockers so the ads wouldn't even show up anwyays"
+					>here's a list of reasons why I don't</a
+				>
+			</p>
+			<script
+				src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+				crossorigin="anonymous"
+			></script>
+			<script>
+				const popoverTriggerList = document.querySelectorAll(
+					'[data-bs-toggle="popover"]'
+				);
+				const popoverList = [...popoverTriggerList].map(
+					(popoverTriggerEl) =>
+						new bootstrap.Popover(popoverTriggerEl)
+				);
+			</script>
 		</div>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-			crossorigin="anonymous"></script>
-		<script>
-			const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-			const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-		</script>
-</body>
-
+	</body>
 </html>
