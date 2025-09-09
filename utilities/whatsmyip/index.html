@@ -157,12 +157,6 @@
 			crossorigin="anonymous"
 		></script>
 		<script type="application/javascript">
-			function getIPv4(json) {
-				document.getElementById("ipv4").textContent = json.ip;
-			}
-			function getIPv6(json) {
-				document.getElementById("ipv6").textContent = json.ip;
-			}
 			fetch("https://ipapi.co/json/" + getIPv4())
 				.then(function (response) {
 					response.json().then((jsonData) => {
@@ -178,6 +172,12 @@
 							jsonData.timezone;
 					});
 				})
+                function getIPv4(json) {
+			    	document.getElementById("ipv4").textContent = json.ip;
+			    }
+			    function getIPv6(json) {
+			    	document.getElementById("ipv6").textContent = json.ip;
+			    }
 				.catch(function (error) {
 					console.log(error);
 				});
