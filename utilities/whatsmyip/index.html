@@ -139,6 +139,23 @@
 			</h5>
 			<p class="marginbtm"></p>
 		</div>
+            <script
+			type="application/json"
+			src="https://ipapi.co/json/"
+		></script>
+		<script
+			type="application/json"
+			src="https://api.ipify.org?format=jsonp&callback=getIPv4"
+		></script>
+		<script
+			type="application/json"
+			src="https://api6.ipify.org?format=jsonp&callback=getIPv6"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
 		<script type="application/javascript">
 			function getIPv4(json) {
 				document.getElementById("ipv4").textContent = json.ip;
@@ -165,22 +182,5 @@
 					console.log(error);
 				});
 		</script>
-		<script
-			type="application/json"
-			src="https://ipapi.co/json/"
-		></script>
-		<script
-			type="application/json"
-			src="https://api.ipify.org?format=jsonp&callback=getIPv4"
-		></script>
-		<script
-			type="application/json"
-			src="https://api6.ipify.org?format=jsonp&callback=getIPv6"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-			crossorigin="anonymous"
-		></script>
 	</body>
 </html>
